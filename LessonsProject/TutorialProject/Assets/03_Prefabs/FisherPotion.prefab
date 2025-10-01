@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &5056617827930874829
+--- !u!1 &8807175650158134838
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,27 +8,25 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 8577784604003633739}
-  - component: {fileID: 6504427346201127675}
-  - component: {fileID: 3541691280080877637}
-  - component: {fileID: 4312718011090470583}
-  - component: {fileID: -3620062131595761923}
-  - component: {fileID: 6328646680258480396}
-  - component: {fileID: 3932646446715897191}
+  - component: {fileID: 1427345374441111202}
+  - component: {fileID: 1130081595516401676}
+  - component: {fileID: -6100318505841991594}
+  - component: {fileID: -6641540104573179065}
+  - component: {fileID: 3254825028073825623}
   m_Layer: 0
-  m_Name: StoneFish
+  m_Name: FisherPotion
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &8577784604003633739
+--- !u!4 &1427345374441111202
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5056617827930874829}
+  m_GameObject: {fileID: 8807175650158134838}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
@@ -37,13 +35,13 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &6504427346201127675
+--- !u!212 &1130081595516401676
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5056617827930874829}
+  m_GameObject: {fileID: 8807175650158134838}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -83,39 +81,25 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 5
-  m_Sprite: {fileID: 7495648390666801960, guid: c1b892c85bf4df649a1f40da459ac283, type: 3}
+  m_SortingOrder: 20
+  m_Sprite: {fileID: -1250547567529748571, guid: 16074684c8bdd5347997a0c9b64e5456, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.32, y: 0.23}
+  m_Size: {x: 0.12, y: 0.16}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &3541691280080877637
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5056617827930874829}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 105a1e5a32d872843a468315673c17a1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::OnCollision_CountAndHide
-  targetObjectName: Bait
-  addValue: 1
---- !u!70 &4312718011090470583
+--- !u!70 &-6100318505841991594
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5056617827930874829}
+  m_GameObject: {fileID: 8807175650158134838}
   m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
@@ -143,45 +127,31 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_Size: {x: 0.32, y: 0.23}
+  m_Offset: {x: 0, y: -0.038386017}
+  m_Size: {x: 0.08333614, y: 0.08333614}
   m_Direction: 0
---- !u!114 &-3620062131595761923
+--- !u!114 &-6641540104573179065
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5056617827930874829}
+  m_GameObject: {fileID: 8807175650158134838}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 28531d45487759743adfd0bcb491bb8c, type: 3}
+  m_Script: {fileID: 11500000, guid: 4216fc7d8b29986469cb7599129bcfd5, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Forever_Avoid
+  m_EditorClassIdentifier: Assembly-CSharp::PotionController
   targetObjectName: Bait
-  speed: 0.5
---- !u!114 &6328646680258480396
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5056617827930874829}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 539d24d8d80ed9d4e8377e4a43232a69, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Forever_Chase
-  targetObjectName: Bait
-  speed: 2
---- !u!50 &3932646446715897191
+  fallSpeed: 0.5
+--- !u!50 &3254825028073825623
 Rigidbody2D:
   serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5056617827930874829}
+  m_GameObject: {fileID: 8807175650158134838}
   m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0

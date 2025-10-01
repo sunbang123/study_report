@@ -44,7 +44,7 @@ public class GameMan : MonoBehaviour
                 break;
             case "Cyan":
                 instance.Shadow.SetActive(false);
-                instance.Ghost.GetComponent<Forever_Chase>().isChasing = true;
+                instance.Ghost.GetComponent<Forever_Chase_Custom>().isChasing = true;
                 break;
             case "Yellow":
                 instance.Shadow.SetActive(false);

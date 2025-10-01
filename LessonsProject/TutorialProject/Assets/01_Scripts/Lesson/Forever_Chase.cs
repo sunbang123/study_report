@@ -12,8 +12,6 @@ public class Forever_Chase : MonoBehaviour
     GameObject targetObject;
     Rigidbody2D rbody;
 
-    public bool isChasing = true;
-
     void Start()
     { 
         targetObject = GameObject.Find(targetObjectName);
@@ -24,8 +22,6 @@ public class Forever_Chase : MonoBehaviour
 
     void FixedUpdate()
     {
-        if (!isChasing) return;
-
         Vector3 dir = (targetObject.transform.position - this.transform.position).normalized;
         float vx = dir.x * speed;
         float vy = dir.y * speed;

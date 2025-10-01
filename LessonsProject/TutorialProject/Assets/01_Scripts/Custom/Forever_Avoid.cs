@@ -9,7 +9,6 @@ public class Forever_Avoid : MonoBehaviour
     Rigidbody2D rbody;
     float avoidDistance = 3f;
     bool avoidFlag = false;
-
     void Start()
     {
         targetObject = GameObject.Find(targetObjectName);

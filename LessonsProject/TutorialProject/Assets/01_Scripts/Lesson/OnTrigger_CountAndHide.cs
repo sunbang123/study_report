@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class OnCollision_CountAndHide : MonoBehaviour
+public class OnTrigger_CountAndHide : MonoBehaviour
 {
     public string targetObjectName;
     public int addValue = 1;
