@@ -1,4 +1,4 @@
-```
+```mermaid
 sequenceDiagram
     actor Player
     participant NPC
