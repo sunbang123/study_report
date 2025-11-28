@@ -8,9 +8,9 @@
 
 C# 자료구조 및 알고리즘 스크립트도 다루고있습니다.
 
-# Study_Report Wiki
+# [Study_Report Wiki](https://github.com/sunbang123/sunha_report/wiki)
 
-- [wiki](https://github.com/sunbang123/sunha_report/wiki)
+> 위 링크를 클릭해서 위키를 확인하세요.
 
 ```yaml
 # 📚 Study List
