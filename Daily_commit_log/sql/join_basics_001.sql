@@ -64,3 +64,10 @@ SELECT
 FROM students 
 RIGHT OUTER JOIN major ON students.major_id = major.id;
 -- 전공테이블을 기준으로 조회하는데 볼드모트의 자료는 전공 테이블에 없으므로 조회되지 않았다.
+
+-- GROUP FUNCTION
+SELECT m.id, m.major_name, COUNT(s.major_id) AS total
+FROM students AS s RIGHT OUTER JOIN major AS m
+ON s.major_id = m.id
+GROUP BY m.id;
+-- 마법 전공은 총 3명이다.
