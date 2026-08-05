@@ -1,0 +1,25 @@
+-- create a table
+CREATE TABLE 품목 (
+  품목ID TEXT PRIMARY KEY,
+  단가 INTEGER
+);
+
+-- insert some values
+INSERT INTO 품목 VALUES ('001', 1000);
+INSERT INTO 품목 VALUES ('002', 2000);
+INSERT INTO 품목 VALUES ('003', 1000);
+INSERT INTO 품목 VALUES ('004', 2000);
+
+-- 첫번째 트랜잭션
+BEGIN TRANSACTION;
+INSERT INTO 품목(품목ID, 단가) VALUES('005', 2000);
+COMMIT; -- 커밋
+
+-- 두번째 트랜잭
+BEGIN TRANSACTION;
+DELETE FROM 품목 WHERE 품목ID = '002';
+UPDATE 품목 SET 단가=2000 WHERE 단가=1000;
+ROLLBACK; -- 취소
+
+-- 결과
+SELECT COUNT(품목ID) FROM 품목 WHERE 단가=2000;
